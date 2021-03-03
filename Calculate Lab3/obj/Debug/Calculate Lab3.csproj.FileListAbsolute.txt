@@ -1,0 +1,10 @@
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\bin\Debug\Calculate Lab3.exe.config
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\bin\Debug\Calculate Lab3.exe
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\bin\Debug\Calculate Lab3.pdb
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\obj\Debug\Calculate Lab3.csprojAssemblyReference.cache
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\obj\Debug\Calculate_Lab3.Form1.resources
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\obj\Debug\Calculate_Lab3.Properties.Resources.resources
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\obj\Debug\Calculate Lab3.csproj.GenerateResource.cache
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\obj\Debug\Calculate Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\obj\Debug\Calculate Lab3.exe
+C:\Users\Chonos\Documents\Lab3\Calculate Lab3\Calculate Lab3\obj\Debug\Calculate Lab3.pdb
