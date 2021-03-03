@@ -84,7 +84,7 @@ namespace Calculate_Lab3
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 534);
+            this.panel1.Size = new System.Drawing.Size(310, 551);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -130,7 +130,7 @@ namespace Calculate_Lab3
             this.tableLayoutPanel2.Controls.Add(this.memoryPlus, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(22, 123);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(22, 131);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -227,7 +227,7 @@ namespace Calculate_Lab3
             this.tableLayoutPanel1.Controls.Add(this.CE, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn7, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn8, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 228);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 245);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -523,7 +523,7 @@ namespace Calculate_Lab3
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(318, 558);
+            this.ClientSize = new System.Drawing.Size(329, 575);
             this.Controls.Add(this.contain);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";

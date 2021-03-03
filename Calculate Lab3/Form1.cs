@@ -29,9 +29,11 @@ namespace Calculate_Lab3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Text = "Тооны машин"; 
+            this.Text = "Тооны машин";
+        
+
             TableLayoutPanel tableLayoutPanel3 = new TableLayoutPanel();
-           tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top 
+            tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top 
                 | System.Windows.Forms.AnchorStyles.Bottom)
                       | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
 
@@ -42,7 +44,7 @@ namespace Calculate_Lab3
             deleteButton.Name = "delete";
             deleteButton.Size = new System.Drawing.Size(100, 33);
             deleteButton.TabIndex = 4;
-            deleteButton.Location = new System.Drawing.Point(100, 100);
+ 
             deleteButton.Text = "DELETE";
             deleteButton.Click += new System.EventHandler(this.deleteAllMemory);
 
@@ -66,6 +68,7 @@ namespace Calculate_Lab3
        
             this.contain.Location = new System.Drawing.Point(394, 88);
             this.contain.Name = "contain";
+
             this.contain.Size = new System.Drawing.Size(400, 500);
             this.contain.TabIndex = 1;
             this.contain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top
@@ -88,7 +91,7 @@ namespace Calculate_Lab3
             tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.65863F));
             tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.34136F));
             tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.34136F));
-            tableLayoutPanel3.Size = new System.Drawing.Size(225, 499);
+            tableLayoutPanel3.Size = new System.Drawing.Size(200, 570);
             tableLayoutPanel3.TabIndex = 1;
 
             this.Controls.Add(tableLayoutPanel3);
@@ -97,8 +100,7 @@ namespace Calculate_Lab3
         private void deleteAllMemory(object sender, EventArgs e)
         {
             this.ClientSize = new System.Drawing.Size(334, 597);
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                      | System.Windows.Forms.AnchorStyles.Left)));
+
             calcBase.deleteMemories();
         }
 
@@ -159,19 +161,19 @@ namespace Calculate_Lab3
         }
         private void createMemory(object sender, EventArgs e)
         {
-            this.ClientSize = new System.Drawing.Size(610, 503);
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                      | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ClientSize = new System.Drawing.Size(530, 570);
+            // this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            //       | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             Memory newMemory = new Memory();
             calcBase.memories.Add(newMemory);
-             id = calcBase.memories.Count;
+            id = calcBase.memories.Count;
             clearResult = true;
             buildEachMemory(0,id);
         }
 
         private void buildEachMemory(int too = 0,int id = 0)
         {
-             container = new Panel();
+            container = new Panel();
             container.Name = id.ToString();
             container.MouseClick += new System.Windows.Forms.MouseEventHandler(this.clickPanel);
             Label memoryLbl = new Label();
@@ -227,7 +229,7 @@ namespace Calculate_Lab3
             exampleButton3.Text = "M-";
             exampleButton3.Click += new System.EventHandler(this.btnOperatormMinus);
             //flow
-            rowContainer.Location = new System.Drawing.Point(45, 50);
+            rowContainer.Location = new System.Drawing.Point(10, 50);
             rowContainer.Controls.Add(exampleButton1);
             rowContainer.Controls.Add(exampleButton2);
             rowContainer.Controls.Add(exampleButton3);
@@ -264,6 +266,8 @@ namespace Calculate_Lab3
         {
 
             if (calcBase.memories.Count == 0)
+                return;
+            if (calcBase.memories.Count == 0)
             {
                 Memory newMemory = new Memory();
                 calcBase.memories.Add(newMemory);
@@ -283,7 +287,7 @@ namespace Calculate_Lab3
             }
         }
         private void btnOperatormMinus(object sender, EventArgs e)
-        {
+        {   
             if (calcBase.memories.Count == 0)
             {
                 Memory newMemory = new Memory();
@@ -307,6 +311,8 @@ namespace Calculate_Lab3
         {
             ((Button)sender).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
         }
+
+        
 
      
     }
